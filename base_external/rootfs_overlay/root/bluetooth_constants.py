@@ -1,17 +1,14 @@
 #!/usr/bin/python3
 
-ADAPTER_NAME = "hci0"
+# This file contains all the constants needed for this project
 
+ADAPTER_NAME = "hci0"
 BLUEZ_SERVICE_NAME = "org.bluez"
 BLUEZ_NAMESPACE = "/org/bluez/"
-
 DBUS_PROPERTIES="org.freedesktop.DBus.Properties"
 DBUS_OM_IFACE = 'org.freedesktop.DBus.ObjectManager'
-
 ADAPTER_INTERFACE = BLUEZ_SERVICE_NAME + ".Adapter1"
-
 DEVICE_INTERFACE = BLUEZ_SERVICE_NAME + ".Device1"
-
 GATT_MANAGER_INTERFACE = BLUEZ_SERVICE_NAME + ".GattManager1"
 GATT_SERVICE_INTERFACE = BLUEZ_SERVICE_NAME + ".GattService1"
 GATT_CHARACTERISTIC_INTERFACE = BLUEZ_SERVICE_NAME + ".GattCharacteristic1"
@@ -53,6 +50,7 @@ UUID_NAMES = {
     "00002902-0000-1000-8000-00805f9b34fb" : "Client Characteristic Configuration",
 }
 
+# These UUIDs are unique for EFR32BG22 Thunderboard Kit SoC Blinky example
 BUTTON_SVC_UUID = "de8a5aac-a99b-c315-0c80-60d4cbb51224"
 BUTTON_CHR_UUID = "61a885a4-41c3-60d0-9a53-6d652a70d29c"
 LED_CHR_UUID    = "5b026510-4088-c297-46d8-be6c736a087a"
